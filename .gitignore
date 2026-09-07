@@ -1,0 +1,43 @@
+# Secrets & tokens
+.env
+backend/data/tokens.json
+
+# Local mirrors of real company data — never commit
+backend/data/
+backend/data-demo/
+
+# The real company's grounding file stays local; the repo ships
+# COMPANY_CONTEXT.example.md and the demo one in context-demo/
+context/COMPANY_CONTEXT.md
+
+# Case studies are traces over the real company's books — kept local
+docs/CASE_STUDY_*.md
+
+# Evals encode the case-study questions/answers (real books) — kept local
+backend/evals/
+
+# The real questions asked of the assistant — they name people and reference
+# the real books — kept local
+docs/question_list.md
+
+# Claude Code session artifacts
+.claude/
+
+# Python
+__pycache__/
+*.pyc
+backend/.venv/
+
+# Node
+frontend/node_modules/
+frontend/dist/
+frontend/tsconfig.tsbuildinfo
+
+# Eval run artifacts (answers + traces; regenerated per run)
+backend/evals/out/
+
+# Personal marketing assets (LinkedIn drafts, videos) — not part of the app
+marketing/
+
+# Misc
+.DS_Store

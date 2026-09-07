@@ -1,0 +1,6 @@
+fastapi>=0.115
+uvicorn[standard]>=0.34
+httpx>=0.28
+pydantic-settings>=2.7
+pydantic-ai-slim[openai,tavily]>=2.21,<3
+trafilatura>=2.1
